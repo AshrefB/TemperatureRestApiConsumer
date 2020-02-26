@@ -21,4 +21,8 @@ public class TemperatureService {
 		return template.postForObject(URL+"/max", request, TemperatureResponse.class);
 	}
 	
+	public TemperatureResponse consumeAvg(TemperatureRequest request) {
+		return template.postForObject(URL+"/avg", request, TemperatureResponse.class);
+	}
+	
 }
