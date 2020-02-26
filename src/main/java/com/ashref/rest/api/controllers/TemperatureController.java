@@ -30,4 +30,9 @@ public class TemperatureController {
 	public TemperatureResponse testConsumeAvg(@RequestBody TemperatureRequest request) {
 		return service.consumeAvg(request);
 	}
+	
+	@PostMapping("/closest-to-zero")
+	public TemperatureResponse testConsumeClosestToZero(@RequestBody TemperatureRequest request) {
+		return service.consumeClosestToZero(request);
+	}
 }
