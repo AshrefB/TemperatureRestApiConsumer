@@ -17,4 +17,8 @@ public class TemperatureService {
 		return template.postForObject(URL+"/min", request, TemperatureResponse.class);
 	}
 	
+	public TemperatureResponse consumeMax(TemperatureRequest request) {
+		return template.postForObject(URL+"/max", request, TemperatureResponse.class);
+	}
+	
 }
