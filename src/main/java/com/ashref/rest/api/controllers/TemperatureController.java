@@ -25,4 +25,9 @@ public class TemperatureController {
 	public TemperatureResponse testConsumeMax(@RequestBody TemperatureRequest request) {
 		return service.consumeMax(request);
 	}
+	
+	@PostMapping("/avg")
+	public TemperatureResponse testConsumeAvg(@RequestBody TemperatureRequest request) {
+		return service.consumeAvg(request);
+	}
 }
