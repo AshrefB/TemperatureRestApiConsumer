@@ -25,4 +25,7 @@ public class TemperatureService {
 		return template.postForObject(URL+"/avg", request, TemperatureResponse.class);
 	}
 	
+	public TemperatureResponse consumeClosestToZero(TemperatureRequest request) {
+		return template.postForObject(URL+"/closest-to-zero", request, TemperatureResponse.class);
+	}
 }
